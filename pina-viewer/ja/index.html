@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pina Viewer — macOS 用の画像・漫画ビューア</title>
+<meta name="description" content="キーボードで操る macOS 用の画像・漫画ビューア。フォルダか書庫を開けばすぐ読めます。↑ ↓ で次の本へ移るので、全画面のまま本棚ごと読み進められます。無料・ネイティブ・約 1.6 MB。">
+<link rel="canonical" href="https://ayrapps.github.io/pina-viewer/ja/">
+<link rel="alternate" hreflang="en" href="https://ayrapps.github.io/pina-viewer/">
+<link rel="alternate" hreflang="ja" href="https://ayrapps.github.io/pina-viewer/ja/">
+<link rel="alternate" hreflang="x-default" href="https://ayrapps.github.io/pina-viewer/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ayrapps">
+<meta property="og:title" content="Pina Viewer — macOS 用の画像・漫画ビューア">
+<meta property="og:description" content="フォルダか書庫を開けばすぐ読めます。↑ ↓ で次の本へ。フォルダの木がまるごと一続きの本棚になります。">
+<meta property="og:url" content="https://ayrapps.github.io/pina-viewer/ja/">
+<meta property="og:image" content="https://ayrapps.github.io/pina-viewer/images/og-ja.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pina Viewer：次の本まで、キーひとつ。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbf8f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1820" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/pina-viewer/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/pina-viewer/images/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Pina Viewer",
+  "inLanguage": "ja",
+  "operatingSystem": "macOS 13 以降",
+  "applicationCategory": "MultimediaApplication",
+  "description": "キーボードで操る macOS 用の画像・漫画ビューア。",
+  "url": "https://ayrapps.github.io/pina-viewer/ja/",
+  "downloadUrl": "https://github.com/ayrapps/pina-viewer/releases/latest",
+  "image": "https://ayrapps.github.io/pina-viewer/images/icon-512.png",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/pina-viewer/ja/"><img src="/pina-viewer/images/icon-512.png" alt="" width="28" height="28">Pina Viewer</a>
+    <nav class="nav" aria-label="サイト">
+      <a class="hide-sm" href="#install">インストール</a>
+      <a class="hide-sm" href="https://github.com/ayrapps/pina-viewer">GitHub</a>
+      <a href="/pina-viewer/" hreflang="en" lang="en">English</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <div class="wrap">
+    <img class="hero-icon" src="/pina-viewer/images/icon-512.png" alt="" width="96" height="96">
+    <p class="eyebrow">Pina Viewer for macOS</p>
+    <h1>次の本まで、キーひとつ。</h1>
+    <p class="lede">キーボードで操る、画像と漫画のためのビューアです。フォルダか書庫を開けば、もう読めます。ライブラリを作る手間も、取り込みもありません。<kbd>↑</kbd><kbd>↓</kbd> で本を移るので、全画面のまま、フォルダの木をまるごと一続きに読み進められます。</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/ayrapps/pina-viewer/releases/latest" data-latest-zip="ayrapps/pina-viewer">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 2a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L9 11.6V3a1 1 0 0 1 1-1zM4 16a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z"/></svg>
+        Mac 版をダウンロード
+      </a>
+      <a class="btn btn-secondary" href="#install">Homebrew で入れる</a>
+    </div>
+    <p class="meta"><span data-latest-version="バージョン {v}" hidden></span><span>無料</span><span>macOS 13 以降</span><span>Apple シリコン・Intel 両対応</span><span>署名・公証済み</span></p>
+    <img class="hero-shot" src="/pina-viewer/images/reading.jpg" width="1440" height="900"
+      alt="葛飾北斎『冨嶽三十六景』の一枚を Pina Viewer で全画面表示したところ">
+  </div>
+</div>
+
+<section id="shelf">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>本棚、本、ページ。</h2>
+      <p>たいていのビューアは、次の本を開くたびに Finder へ戻らせます。Pina Viewer は戻らせません。フォルダや書庫が 1 冊の本で、そのすぐ下にある画像と動画がページです。本棚は開いた場所から割り出すので、矢印キーはいつも筋の通った動きをします。</p>
+    </div>
+
+    <div class="shelf" aria-hidden="true">
+      <div class="panel">
+        <div class="panel-label"><span>本棚</span><span class="keys"><kbd>↑</kbd><kbd>↓</kbd></span></div>
+        <ul class="books">
+          <li><svg viewBox="0 0 20 20"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h4l2 2h7A1.5 1.5 0 0 1 18 7.5v7a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 2 14.5z"/></svg>第 01 巻</li>
+          <li class="current"><svg viewBox="0 0 20 20"><path fill="currentColor" d="M5 2h7l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm4 3v2h2V5zm0 3v2h2V8zm0 3v3h2v-3z"/></svg>第 02 巻.cbz</li>
+          <li><svg viewBox="0 0 20 20"><path fill="currentColor" d="M5 2h7l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm4 3v2h2V5zm0 3v2h2V8zm0 3v3h2v-3z"/></svg>第 03 巻.zip</li>
+          <li><svg viewBox="0 0 20 20"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h4l2 2h7A1.5 1.5 0 0 1 18 7.5v7a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 2 14.5z"/></svg>第 04 巻</li>
+          <li><svg viewBox="0 0 20 20"><path fill="currentColor" d="M5 2h7l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/></svg>おまけ.pdf</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="panel-label"><span>第 02 巻のページ</span><span class="keys"><kbd>←</kbd><kbd>→</kbd></span></div>
+        <div class="pages">
+          <div class="page"></div>
+          <div class="page"></div>
+          <div class="page current"></div>
+          <div class="page"></div>
+          <div class="page"><span class="play"></span></div>
+          <div class="page"></div>
+        </div>
+        <p class="page-caption">静止画も動画も、1 冊の中に順に並びます。</p>
+      </div>
+    </div>
+
+    <div class="shelf-notes">
+      <p><strong><kbd>←</kbd><kbd>→</kbd> でページをめくる。</strong>動画も含めて本の中をすべて順にたどります。矢印キーの意味が途中で変わることはありません。</p>
+      <p><strong><kbd>↑</kbd><kbd>↓</kbd> で本を替える。</strong>第 02 巻を読み終えたら、第 03 巻はキーひとつ先。フォルダでも書庫でも同じです。</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>整理するためではなく、読むために。</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <h3>動画もページのひとつ</h3>
+        <p>静止画と動画が混ざったフォルダも、そのまま読めます。サムネイル一覧では、動画にもほかのページと同じように表紙のコマが付きます。</p>
+      </div>
+      <div class="feature">
+        <h3>見開きは右綴じも左綴じも</h3>
+        <p>漫画は漫画らしく読めます。表紙のせいで組み合わせがずれたら、1 ページぶん送って組み直せます。</p>
+      </div>
+      <div class="feature">
+        <h3>書庫をそのまま開く</h3>
+        <p>zip・cbz・rar・cbr・7z・cb7、それに PDF。展開したファイルをディスクに残しません。</p>
+      </div>
+      <div class="feature">
+        <h3>ネイティブで小さい</h3>
+        <p>約 1.6 MB のユニバーサルアプリで、署名・公証済み。Electron も常駐プロセスもテレメトリもありません。</p>
+      </div>
+      <div class="feature">
+        <h3>設定は読めるファイルひとつ</h3>
+        <p>キーの割り当ても含め、設定はすべて <code>~/.config/<wbr>pina-viewer/<wbr>settings.json</code> にあります。キーを整列した素の JSON なので、そのまま dotfiles に入れられます。</p>
+      </div>
+      <div class="feature">
+        <h3>キーは自分好みに</h3>
+        <p>割り当てはすべて設定画面から変えられます。アプリの中で <kbd>?</kbd> を押せば一覧が出ます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modes">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>見方はひとつではない。</h2>
+    </div>
+    <div class="modes">
+      <div class="mode">
+        <figure>
+          <img src="/pina-viewer/images/thumbnails.jpg" width="1440" height="900" loading="lazy"
+            alt="サムネイル一覧。1 冊ぶんの版画が小さな画像の格子で並んでいる">
+          <figcaption><strong>サムネイル一覧</strong>本の全体をひと目で。大きさは 3 段階。</figcaption>
+        </figure>
+      </div>
+      <div class="mode">
+        <figure>
+          <img src="/pina-viewer/images/collage.jpg" width="1440" height="900" loading="lazy"
+            alt="コラージュの壁。版画が少しずつ傾いて重なり合っている">
+          <figcaption><strong>コラージュの壁</strong>絵が流れていく壁。名前の分からない何かを探すときに。</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="modes-more">
+      <p><strong>スライドショー</strong>ページを自動でめくります。スクロールかフェードを選べます。</p>
+      <p><strong>整理</strong>1 枚ずつ見ながら捨てるものに印を付け、最後にまとめて削除します。</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="keys">
+  <div class="wrap two-col">
+    <div>
+      <h2>キー</h2>
+      <table>
+        <tr><th><kbd>←</kbd><kbd>→</kbd></th><td>前 / 次のページ</td></tr>
+        <tr><th><kbd>↑</kbd><kbd>↓</kbd></th><td>本棚の前 / 次の本</td></tr>
+        <tr><th>左 / 右クリック</th><td>次 / 前のページ</td></tr>
+        <tr><th><kbd>Space</kbd></th><td>次のページ。動画の上では再生 / 一時停止</td></tr>
+        <tr><th><kbd>F</kbd></th><td>全画面</td></tr>
+        <tr><th><kbd>W</kbd></th><td>高さに合わせる ↔ 幅に合わせる</td></tr>
+        <tr><th><kbd>D</kbd></th><td>単ページ / 見開き</td></tr>
+        <tr><th><kbd>G</kbd></th><td>右綴じ ↔ 左綴じ</td></tr>
+        <tr><th><kbd>T</kbd></th><td>サムネイル一覧</td></tr>
+        <tr><th><kbd>C</kbd></th><td>コラージュの壁</td></tr>
+        <tr><th><kbd>S</kbd></th><td>スライドショー</td></tr>
+        <tr><th><kbd>E</kbd></th><td>整理（ページを選んで削除）</td></tr>
+        <tr><th><kbd>V</kbd></th><td>情報の表示</td></tr>
+        <tr><th><kbd>?</kbd></th><td>そのほかすべて</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>対応形式</h2>
+      <table class="formats">
+        <tr><th>画像</th><td>jpg jpeg jpe jfif png gif webp heic heif avif bmp tif tiff tga</td></tr>
+        <tr><th>動画</th><td>mp4 m4v mov</td></tr>
+        <tr><th>書庫</th><td>zip cbz rar cbr 7z cb7</td></tr>
+        <tr><th>文書</th><td>pdf</td></tr>
+      </table>
+      <p class="note">AVFoundation で再生できない形式（avi・mkv・webm・wmv・flv）も、一覧には出します。再生はしませんが、何があるかが見えるので、消えたと戸惑わずに変換へ回せます。設定で隠すこともできます。</p>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>インストール</h2>
+      <p>macOS 13（Ventura）以降で動きます。無料です。</p>
+    </div>
+    <div class="install">
+      <div class="panel">
+        <h3>Homebrew で入れる</h3>
+        <div class="terminal">
+          <div class="terminal-bar"><span>ターミナル</span><button class="copy" type="button" data-copy="brew" data-copied="コピーしました">コピー</button></div>
+          <pre class="code"><code id="brew">brew tap ayrapps/tap
+brew trust ayrapps/tap
+brew install --cask pina-viewer</code></pre>
+        </div>
+        <p>Homebrew 6 以降では、第三者の tap に <code>brew trust</code> が必要です。これが無いと “Refusing to load cask from untrusted tap” で止まります。</p>
+        <p>更新は <code>brew upgrade</code> で届きます。</p>
+      </div>
+      <div class="panel">
+        <h3>zip を落として入れる</h3>
+        <ol>
+          <li>最新版をダウンロードする。</li>
+          <li>展開する。</li>
+          <li><strong>Pina Viewer.app</strong> を <code>/Applications</code> へ移す。</li>
+        </ol>
+        <a class="btn btn-primary" href="https://github.com/ayrapps/pina-viewer/releases/latest" data-latest-zip="ayrapps/pina-viewer">Mac 版をダウンロード</a>
+        <p style="margin-top:14px"><a href="https://github.com/ayrapps/pina-viewer/releases">すべてのリリース</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt support" id="support">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>応援する</h2>
+      <p>会社の後ろ盾のない、趣味の作り物です。どちらにしても無料のままですが、毎日の中に居場所を見つけてもらえたなら、コーヒーを 1 杯おごってもらえると励みになります。</p>
+    </div>
+    <a class="btn btn-secondary" href="https://github.com/sponsors/lynthey">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#c8546b" d="M10 17.3l-1.1-1C4.8 12.6 2 10.1 2 7a4 4 0 0 1 4-4c1.5 0 3 .7 4 1.9A5.3 5.3 0 0 1 14 3a4 4 0 0 1 4 4c0 3.1-2.8 5.6-6.9 9.3z"/></svg>
+      GitHub Sponsors で応援する
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="フッター">
+      <a href="https://github.com/ayrapps/pina-viewer">GitHub</a>
+      <a href="https://github.com/ayrapps/pina-viewer/releases">リリース</a>
+      <a href="https://github.com/ayrapps/pina-viewer/issues">Issues</a>
+      <a href="https://github.com/ayrapps/pina-viewer/blob/master/LICENSE">ライセンス</a>
+      <a href="/">ayrapps</a>
+      <a href="/pina-viewer/" hreflang="en" lang="en">English</a>
+    </nav>
+    <p>画面写真の本は、葛飾北斎『冨嶽三十六景』（1830〜33 年頃）です。パブリックドメインの作品を<a href="https://commons.wikimedia.org/wiki/Category:36_Views_of_Mount_Fuji">Wikimedia Commons</a> から使っています。</p>
+    <p>MIT ライセンス。ただし同梱の UnRAR のソースコードは、それ自身の条件に従います。</p>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

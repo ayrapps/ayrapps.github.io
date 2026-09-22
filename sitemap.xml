@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ayrapps.github.io/</loc>
+  </url>
+  <url>
+    <loc>https://ayrapps.github.io/pina-viewer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ayrapps.github.io/pina-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ayrapps.github.io/pina-viewer/ja/"/>
+  </url>
+  <url>
+    <loc>https://ayrapps.github.io/pina-viewer/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://ayrapps.github.io/pina-viewer/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ayrapps.github.io/pina-viewer/ja/"/>
+  </url>
+</urlset>

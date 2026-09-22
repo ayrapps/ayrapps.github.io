@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pina Viewer — Image and comic viewer for macOS</title>
+<meta name="description" content="A keyboard-driven image and comic viewer for macOS. Point it at a folder or an archive and read — ↑ and ↓ move between books without leaving full screen. Free, native, about 1.6 MB.">
+<link rel="canonical" href="https://ayrapps.github.io/pina-viewer/">
+<link rel="alternate" hreflang="en" href="https://ayrapps.github.io/pina-viewer/">
+<link rel="alternate" hreflang="ja" href="https://ayrapps.github.io/pina-viewer/ja/">
+<link rel="alternate" hreflang="x-default" href="https://ayrapps.github.io/pina-viewer/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ayrapps">
+<meta property="og:title" content="Pina Viewer — Image and comic viewer for macOS">
+<meta property="og:description" content="Point it at a folder or an archive and read. ↑ and ↓ move between books, so a whole folder tree reads as one continuous thing.">
+<meta property="og:url" content="https://ayrapps.github.io/pina-viewer/">
+<meta property="og:image" content="https://ayrapps.github.io/pina-viewer/images/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Pina Viewer: the next book is one key away.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbf8f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1820" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/pina-viewer/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/pina-viewer/images/apple-touch-icon.png">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Pina Viewer",
+  "operatingSystem": "macOS 13 or later",
+  "applicationCategory": "MultimediaApplication",
+  "description": "A keyboard-driven image and comic viewer for macOS.",
+  "url": "https://ayrapps.github.io/pina-viewer/",
+  "downloadUrl": "https://github.com/ayrapps/pina-viewer/releases/latest",
+  "image": "https://ayrapps.github.io/pina-viewer/images/icon-512.png",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/pina-viewer/"><img src="/pina-viewer/images/icon-512.png" alt="" width="28" height="28">Pina Viewer</a>
+    <nav class="nav" aria-label="Site">
+      <a class="hide-sm" href="#install">Install</a>
+      <a class="hide-sm" href="https://github.com/ayrapps/pina-viewer">GitHub</a>
+      <a href="/pina-viewer/ja/" hreflang="ja" lang="ja">日本語</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <div class="wrap">
+    <img class="hero-icon" src="/pina-viewer/images/icon-512.png" alt="" width="96" height="96">
+    <p class="eyebrow">Pina Viewer for macOS</p>
+    <h1>The next book is one key away.</h1>
+    <p class="lede">A keyboard-driven image and comic viewer. Point it at a folder or an archive and read.
+      There is no library to build and nothing to import — and <kbd>↑</kbd><kbd>↓</kbd> move between books,
+      so a whole folder tree reads as one continuous thing without ever leaving full screen.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/ayrapps/pina-viewer/releases/latest" data-latest-zip="ayrapps/pina-viewer">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="currentColor" d="M10 2a1 1 0 0 1 1 1v8.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L9 11.6V3a1 1 0 0 1 1-1zM4 16a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1z"/></svg>
+        Download for Mac
+      </a>
+      <a class="btn btn-secondary" href="#install">Install with Homebrew</a>
+    </div>
+    <p class="meta"><span data-latest-version="Version {v}" hidden></span><span>Free</span><span>macOS 13 or later</span><span>Apple silicon and Intel</span><span>Signed and notarized</span></p>
+    <img class="hero-shot" src="/pina-viewer/images/reading.jpg" width="1440" height="900"
+      alt="A woodblock print from Hokusai's Thirty-six Views of Mount Fuji shown full screen in Pina Viewer">
+  </div>
+</div>
+
+<section id="shelf">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Shelf, book, page.</h2>
+      <p>Most viewers send you back to the Finder to open the next book. This one doesn’t.
+        A folder or an archive is a book; the images and videos directly inside it are its pages.
+        The shelf is worked out from where you opened, so the arrow keys always mean something sensible.</p>
+    </div>
+
+    <div class="shelf" aria-hidden="true">
+      <div class="panel">
+        <div class="panel-label"><span>Shelf</span><span class="keys"><kbd>↑</kbd><kbd>↓</kbd></span></div>
+        <ul class="books">
+          <li><svg viewBox="0 0 20 20"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h4l2 2h7A1.5 1.5 0 0 1 18 7.5v7a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 2 14.5z"/></svg>Vol. 01</li>
+          <li class="current"><svg viewBox="0 0 20 20"><path fill="currentColor" d="M5 2h7l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm4 3v2h2V5zm0 3v2h2V8zm0 3v3h2v-3z"/></svg>Vol. 02.cbz</li>
+          <li><svg viewBox="0 0 20 20"><path fill="currentColor" d="M5 2h7l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm4 3v2h2V5zm0 3v2h2V8zm0 3v3h2v-3z"/></svg>Vol. 03.zip</li>
+          <li><svg viewBox="0 0 20 20"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h4l2 2h7A1.5 1.5 0 0 1 18 7.5v7a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 2 14.5z"/></svg>Vol. 04</li>
+          <li><svg viewBox="0 0 20 20"><path fill="currentColor" d="M5 2h7l4 4v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/></svg>Extras.pdf</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <div class="panel-label"><span>Pages in Vol. 02</span><span class="keys"><kbd>←</kbd><kbd>→</kbd></span></div>
+        <div class="pages">
+          <div class="page"></div>
+          <div class="page"></div>
+          <div class="page current"></div>
+          <div class="page"></div>
+          <div class="page"><span class="play"></span></div>
+          <div class="page"></div>
+        </div>
+        <p class="page-caption">Stills and clips in one book, in order.</p>
+      </div>
+    </div>
+
+    <div class="shelf-notes">
+      <p><strong><kbd>←</kbd><kbd>→</kbd> turn pages.</strong> Through everything in the book, videos included — the arrow keys never change meaning under you.</p>
+      <p><strong><kbd>↑</kbd><kbd>↓</kbd> change books.</strong> At the end of Vol. 02, Vol. 03 is one key away — folder or archive, it doesn’t matter.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Made for reading, not managing.</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <h3>Videos are pages, not a separate mode</h3>
+        <p>A folder holding both stills and clips just works. A video gets a poster frame in the thumbnail grid like any other page.</p>
+      </div>
+      <div class="feature">
+        <h3>Two-page spreads, right- or left-bound</h3>
+        <p>Manga reads the way it should, and you can nudge the pairing by one page when a cover throws it off.</p>
+      </div>
+      <div class="feature">
+        <h3>Archives open directly</h3>
+        <p>zip, cbz, rar, cbr, 7z, cb7 — and PDFs. Nothing is permanently unpacked to disk.</p>
+      </div>
+      <div class="feature">
+        <h3>Native and small</h3>
+        <p>About 1.6 MB, universal, signed and notarized. No Electron, no background daemon, no telemetry.</p>
+      </div>
+      <div class="feature">
+        <h3>One readable settings file</h3>
+        <p>Everything, key bindings included, lives in <code>~/.config/<wbr>pina-viewer/<wbr>settings.json</code>. Plain JSON with sorted keys — it can go straight into your dotfiles.</p>
+      </div>
+      <div class="feature">
+        <h3>Every key is yours</h3>
+        <p>Every binding can be changed in Settings. Press <kbd>?</kbd> in the app for the full list.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modes">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>More than one way to look.</h2>
+    </div>
+    <div class="modes">
+      <div class="mode">
+        <figure>
+          <img src="/pina-viewer/images/thumbnails.jpg" width="1440" height="900" loading="lazy"
+            alt="The thumbnail grid showing the prints of a book as a grid of small images">
+          <figcaption><strong>Thumbnail grid</strong>The whole book at a glance, in three sizes.</figcaption>
+        </figure>
+      </div>
+      <div class="mode">
+        <figure>
+          <img src="/pina-viewer/images/collage.jpg" width="1440" height="900" loading="lazy"
+            alt="The collage wall with prints scattered and overlapping at slight angles">
+          <figcaption><strong>Collage wall</strong>Pictures drifting past, for finding something you cannot name.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="modes-more">
+      <p><strong>Slideshow</strong>Turns pages on its own, either scrolling or fading.</p>
+      <p><strong>Sorting</strong>Step through, mark what to throw away, then delete in one go.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="keys">
+  <div class="wrap two-col">
+    <div>
+      <h2>Keys</h2>
+      <table>
+        <tr><th><kbd>←</kbd><kbd>→</kbd></th><td>Previous / next page</td></tr>
+        <tr><th><kbd>↑</kbd><kbd>↓</kbd></th><td>Previous / next book on the shelf</td></tr>
+        <tr><th>Left / right click</th><td>Next / previous page</td></tr>
+        <tr><th><kbd>Space</kbd></th><td>Next page — or play/pause on a video</td></tr>
+        <tr><th><kbd>F</kbd></th><td>Full screen</td></tr>
+        <tr><th><kbd>W</kbd></th><td>Fit height ↔ fit width</td></tr>
+        <tr><th><kbd>D</kbd></th><td>One page or two</td></tr>
+        <tr><th><kbd>G</kbd></th><td>Right-bound ↔ left-bound</td></tr>
+        <tr><th><kbd>T</kbd></th><td>Thumbnail grid</td></tr>
+        <tr><th><kbd>C</kbd></th><td>Collage wall</td></tr>
+        <tr><th><kbd>S</kbd></th><td>Slideshow</td></tr>
+        <tr><th><kbd>E</kbd></th><td>Sorting — pick pages and delete them</td></tr>
+        <tr><th><kbd>V</kbd></th><td>Info overlay</td></tr>
+        <tr><th><kbd>?</kbd></th><td>Everything else</td></tr>
+      </table>
+    </div>
+    <div>
+      <h2>Formats</h2>
+      <table class="formats">
+        <tr><th>Images</th><td>jpg jpeg jpe jfif png gif webp heic heif avif bmp tif tiff tga</td></tr>
+        <tr><th>Video</th><td>mp4 m4v mov</td></tr>
+        <tr><th>Archives</th><td>zip cbz rar cbr 7z cb7</td></tr>
+        <tr><th>Documents</th><td>pdf</td></tr>
+      </table>
+      <p class="note">Formats AVFoundation cannot play — avi, mkv, webm, wmv, flv — are listed but not played,
+        so you can see what is there and convert it rather than wonder where it went. They can be hidden in Settings.</p>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Install</h2>
+      <p>Requires macOS 13 (Ventura) or later. Free.</p>
+    </div>
+    <div class="install">
+      <div class="panel">
+        <h3>With Homebrew</h3>
+        <div class="terminal">
+          <div class="terminal-bar"><span>Terminal</span><button class="copy" type="button" data-copy="brew" data-copied="Copied">Copy</button></div>
+          <pre class="code"><code id="brew">brew tap ayrapps/tap
+brew trust ayrapps/tap
+brew install --cask pina-viewer</code></pre>
+        </div>
+        <p><code>brew trust</code> is required for third-party taps on Homebrew 6 and later; without it the install stops with “Refusing to load cask from untrusted tap”.</p>
+        <p>Updates come with <code>brew upgrade</code>.</p>
+      </div>
+      <div class="panel">
+        <h3>Or download the zip</h3>
+        <ol>
+          <li>Download the latest release.</li>
+          <li>Unpack it.</li>
+          <li>Move <strong>Pina Viewer.app</strong> into <code>/Applications</code>.</li>
+        </ol>
+        <a class="btn btn-primary" href="https://github.com/ayrapps/pina-viewer/releases/latest" data-latest-zip="ayrapps/pina-viewer">Download for Mac</a>
+        <p style="margin-top:14px"><a href="https://github.com/ayrapps/pina-viewer/releases">All releases</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt support" id="support">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Support</h2>
+      <p>A hobby project, with no company behind it. It stays free either way — but if it has earned a place in your day, you can buy me a coffee.</p>
+    </div>
+    <a class="btn btn-secondary" href="https://github.com/sponsors/lynthey">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path fill="#c8546b" d="M10 17.3l-1.1-1C4.8 12.6 2 10.1 2 7a4 4 0 0 1 4-4c1.5 0 3 .7 4 1.9A5.3 5.3 0 0 1 14 3a4 4 0 0 1 4 4c0 3.1-2.8 5.6-6.9 9.3z"/></svg>
+      Sponsor on GitHub
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="https://github.com/ayrapps/pina-viewer">GitHub</a>
+      <a href="https://github.com/ayrapps/pina-viewer/releases">Releases</a>
+      <a href="https://github.com/ayrapps/pina-viewer/issues">Issues</a>
+      <a href="https://github.com/ayrapps/pina-viewer/blob/master/LICENSE">License</a>
+      <a href="/">ayrapps</a>
+      <a href="/pina-viewer/ja/" hreflang="ja" lang="ja">日本語</a>
+    </nav>
+    <p>The book in the screenshots is Hokusai’s <cite>Thirty-six Views of Mount Fuji</cite> (c. 1830–33), in the public domain,
+      from <a href="https://commons.wikimedia.org/wiki/Category:36_Views_of_Mount_Fuji">Wikimedia Commons</a>.</p>
+    <p>MIT License, except the bundled UnRAR source code, which is covered by its own terms.</p>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
